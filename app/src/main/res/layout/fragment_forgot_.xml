@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/avok"
+    android:layout_height="match_parent"
+
+    tools:context=".registrasiya.Forgot_Fragment">
+
+    <TextView
+        style="@style/TextAppearance.Compat.Notification.Time.Media"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:textColor="#100F10"
+        android:gravity="center"
+        android:text="Forgot your password?\nEnter your password reset email"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/gmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email"
+        android:inputType="textEmailAddress"
+        android:layout_weight="0"
+        />
+
+    <Button
+        android:id="@+id/sentt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sent sms"
+        android:shadowRadius="@android:integer/config_longAnimTime"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shapee"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:layout_weight="0"
+        />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

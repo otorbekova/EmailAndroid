@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d"
+    android:orientation="vertical"
+    tools:context=".Main.TimeTable_Fragment">
+
+   <WebView
+       android:id="@+id/webview"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintLeft_toLeftOf="parent"
+       app:layout_constraintRight_toRightOf="parent"
+       />
+
+   <ImageView
+       android:id="@+id/avn"
+       android:layout_width="150dp"
+       android:layout_height="100dp"
+       app:srcCompat="@drawable/avn"
+       android:layout_marginTop="15dp"
+       app:layout_constraintTop_toBottomOf="@id/webview"
+       app:layout_constraintLeft_toLeftOf="parent"
+       />
+
+   <TextView
+       android:id="@+id/avn_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      android:text="avn"
+       android:textColor="#F9F6FB"
+       app:layout_constraintTop_toBottomOf="@id/avn"
+       app:layout_constraintLeft_toLeftOf="@id/avn"
+       app:layout_constraintRight_toRightOf="@id/avn"
+      />
+
+   <ImageView
+       android:id="@+id/rasp_stud"
+       android:layout_width="150dp"
+       android:layout_height="100dp"
+       app:srcCompat="@drawable/mmmm"
+       android:layout_marginTop="15dp"
+       android:layout_marginLeft="200dp"
+       app:layout_constraintTop_toBottomOf="@id/webview"
+       app:layout_constraintLeft_toLeftOf="@id/avn"
+       app:layout_constraintRight_toRightOf="parent"
+       />
+
+   <TextView
+       android:id="@+id/text_vto"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Расписание группы "
+       android:textColor="#F9F6FB"
+       app:layout_constraintTop_toBottomOf="@id/rasp_stud"
+       app:layout_constraintLeft_toLeftOf="@id/rasp_stud"
+       app:layout_constraintRight_toRightOf="@id/rasp_stud"
+       />
+
+   <ImageView
+       android:id="@+id/rasp_teach"
+       android:layout_width="250dp"
+       android:layout_height="100dp"
+       app:srcCompat="@drawable/rick"
+       android:layout_marginTop="15dp"
+       app:layout_constraintTop_toBottomOf="@id/avn_text"
+       app:layout_constraintLeft_toLeftOf="@id/avn_text"
+       app:layout_constraintRight_toRightOf="@id/avn_text"
+       />
+
+   <TextView
+       android:id="@+id/text_teach"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Расписание учителей "
+       android:textColor="#F9F6FB"
+       app:layout_constraintTop_toBottomOf="@id/rasp_teach"
+       app:layout_constraintLeft_toLeftOf="@id/rasp_teach"
+       app:layout_constraintRight_toRightOf="@id/rasp_teach"
+       />
+
+   <ImageView
+       android:id="@+id/poisk"
+       android:layout_width="150dp"
+       android:layout_height="100dp"
+       app:srcCompat="@drawable/sc"
+       android:layout_marginTop="15dp"
+       app:layout_constraintTop_toBottomOf="@id/text_vto"
+       app:layout_constraintLeft_toLeftOf="@id/text_vto"
+       app:layout_constraintRight_toRightOf="@id/text_vto"
+       />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Расписание"
+       android:textColor="#F9F6FB"
+       app:layout_constraintTop_toBottomOf="@id/poisk"
+       app:layout_constraintLeft_toLeftOf="@id/poisk"
+       app:layout_constraintRight_toRightOf="@id/poisk"
+       />
+</androidx.constraintlayout.widget.ConstraintLayout>
